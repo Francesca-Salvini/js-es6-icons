@@ -195,6 +195,7 @@ function printIcons(iconsArray, container) {
     });
 }
 
+// 2
 // Crea un nuovo array di icone con anche i colori
 //
 // originalIconsArray --> Array di oggetti in cui ogni oggetto rappresenta un'icona
@@ -206,8 +207,8 @@ function colorIcons(originalIconsArray, colorsArray) {
 
     // per creare un nuovo array da quello originale uso map()
     const iconsWithColors = icons.map((element) => {
+        
         // creo una copia del'array di oggetti originale
-
         const newIconObj = {
             ...element
         };
@@ -221,7 +222,7 @@ function colorIcons(originalIconsArray, colorsArray) {
             newIconObj.color = colorsArray[iconTypeIndex];
         }
         
-        console.log(newIconObj);
+        // console.log(newIconObj);
         return newIconObj;
     });
 
@@ -230,6 +231,7 @@ function colorIcons(originalIconsArray, colorsArray) {
     return iconsWithColors;
 }
 
+// 3
 // Crea un array con i tipi di icone
 //
 // iconsArray --> Array di oggetti in cui ogni oggetto rappresenta un'icona
@@ -251,7 +253,7 @@ function getIconsTypes(iconsArray) {
     
 }
 
-
+// 4
 // Popola la select per filtrare le icone
 //
 // iconTypesArray --> Array di stringhe, ogni stringa è un tipo di icona
@@ -268,6 +270,7 @@ function printFilterOptions(iconTypesArray , selectElement ) {
     });
 }
 
+// 5
 //Filtra le icone per tipo
 
 // iconsArray --> Array di oggetti in cui ogni oggetto rappresenta un'icona
